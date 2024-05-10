@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-farming</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation bar styles */
+        .right-side ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .right-side li {
+            float: left;
+        }
+
+        .right-side li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .right-side li a:hover {
+            background-color: #111;
+        }
+
+        /* Home section styles */
+        .home {
+            background-image: url("background1.jpg"); /* Adjust the path to your image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #161414;
+        }
+
+        .home h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        /* Services section styles */
+        .services {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .services .heading {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .service-card p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Crops section styles */
+        .crops {
+            display: none; /* Hide the crops section by default */
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .crops .heading {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .crop-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .crop-info .crop-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .crop-info .crop-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .crop-info .crop-card p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="right-side">
+    <ul>
+        <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="crop.html"><i class="fa fa-leaf" aria-hidden="true"></i>Crops</a></li>
+
+        <li><a href="rent.html"><i class="fa fa-bus" aria-hidden="true"></i>Rent machinery</a></li>
+        <li><a href="cultivation.html"><i class="fa fa-asl-interpreting"></i>Cultivation &amp; Protection</a></li>
+        <li><a href="register.html"><i class="fa fa-fw fa-envelope"></i>Register</a></li>
+    </ul>
+</div>
+
+<div class="home">
+    <h1>Welcome to E-farming</h1>
+    <p>Your one-stop destination for all farming needs</p>
+</div>
+
+<section class="services">
+    <div class="container">
+        <div class="heading">
+            <p>Our Services</p>
+        </div>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="service1.jpg" alt="Service 1">
+                <h2>Service 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service-card">
+                <img src="service2.jpg" alt="Service 2">
+                <h2>Service 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service-card">
+                <img src="service3.jpg" alt="Service 3">
+                <h2>Service 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    function toggleCrops() {
+        var cropsSection = document.querySelector('.crops');
+        if (cropsSection.style.display === "none") {
+            cropsSection.style.display = "block";
+        } else {
+            cropsSection.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
